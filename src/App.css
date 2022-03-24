@@ -1,38 +1,20 @@
-.App {
-  text-align: center;
+/*IMPORTS*/
+@import "assets/fonts/quicksand/webfontkit/quicksand_fontface.css";
+@import "assets/fonts/roboto condensed/webfontkit/roboto-condensed_fontface.css";
+
+/*COLORS*/
+{
+  color: #dd3038;
+  color: #e7613a;
+  color: #FDF4F2;
+  color: #292929;
+  color: #FFFFFF;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*CSS RESET*/
+* {
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
