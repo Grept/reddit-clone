@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 import Post from "../../components/Post";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 
 function HomePage() {
 
@@ -22,14 +24,19 @@ function HomePage() {
 
     return (
         <>
-            <h1>home page</h1>
-            <ul>
-                {postList.length > 0 &&
-                postList.map(({data: e}) => {
-                    return <li key={e.created + e.title}><Post post={e} /></li>
-                })
-                }
-            </ul>
+            <section>
+                <Header />
+            </section>
+            <section>
+                <ul>
+                    {postList.length > 0 &&
+                    postList.map(({data: e}) => {
+                        return <li key={e.created + e.title}><Post post={e} /></li>
+                    })
+                    }
+                </ul>
+            </section>
+            <Footer />
 
         </>
     );
