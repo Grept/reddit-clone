@@ -24,7 +24,7 @@ function HomePage() {
 
     return (
         <>
-            <section>
+            <section className="header-section">
                 <Header />
             </section>
             <section>
