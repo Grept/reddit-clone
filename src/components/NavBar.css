@@ -1,0 +1,28 @@
+nav ul {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+
+
+}
+
+nav ul li {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-left: 40px;
+}
+
+nav {
+    /*border: 2px solid purple;*/
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}

@@ -3,6 +3,7 @@ import axios from "axios";
 import Post from "../../components/Post";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import "./HomePage.css";
 
 function HomePage() {
 
@@ -27,14 +28,20 @@ function HomePage() {
             <section className="header-section">
                 <Header />
             </section>
-            <section>
-                <ul>
-                    {postList.length > 0 &&
-                    postList.map(({data: e}) => {
-                        return <li key={e.created + e.title}><Post post={e} /></li>
-                    })
-                    }
-                </ul>
+            <section className="post-section">
+                <div className="post-section-container">
+                    <header>
+                        <h1>Hottest posts</h1>
+                        <h5>on reddit right now</h5>
+                    </header>
+                    <ul className="post-list">
+                        {postList.length > 0 &&
+                        postList.map(({data: e}) => {
+                            return <li key={e.created + e.title}><Post post={e} /></li>
+                        })
+                        }
+                    </ul>
+                </div>
             </section>
             <Footer />
 
