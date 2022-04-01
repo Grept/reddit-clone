@@ -34,13 +34,15 @@ function HomePage() {
                         <h1>Hottest posts</h1>
                         <h5>on reddit right now</h5>
                     </header>
-                    <ul className="post-list">
-                        {postList.length > 0 &&
-                        postList.map(({data: e}) => {
-                            return <li key={e.created + e.title}><Post post={e} /></li>
-                        })
-                        }
-                    </ul>
+                    <div className="post-list">
+                        <ul>
+                            {postList.length > 0 &&
+                            postList.map(({data: e}) => {
+                                return <li key={e.created + e.title}><Post post={e} /></li>
+                            })
+                            }
+                        </ul>
+                    </div>
                 </div>
             </section>
             <Footer />

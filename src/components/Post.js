@@ -5,7 +5,7 @@ import "./Post.css";
 function Post({post}) {
     return(
         <>
-            <section className="post-card">
+            <section className="post-container">
                 <a href={post.url}><h1 className="post-title">{post.title}</h1></a>
                 <div className="post-card-footer">
                     <Link to={`/subreddit/${post.subreddit}`}><h4>{post.subreddit_name_prefixed}</h4></Link>
